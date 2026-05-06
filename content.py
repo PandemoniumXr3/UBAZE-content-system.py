@@ -266,8 +266,6 @@ ideas = [
 
 
 
-
-
 ]
 
 idea = random.choice(ideas)
