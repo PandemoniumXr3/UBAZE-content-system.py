@@ -455,8 +455,10 @@ if platform == "instagram":
     print("\n📝 CAPTION:")
     print(post["caption"])
 
-elif platform == "tiktok":
-    print("\n🎥 TIKTOK IDEA:", idea["title"])
+platform = input("\nTikTok or Instagram? ").lower()
+
+if platform == "tiktok":
+    print("\n🎥 IDEA:", idea["title"])
 
     print("\n🎤 WHAT TO SAY:")
     for s in idea["say"]:
@@ -465,3 +467,15 @@ elif platform == "tiktok":
     print("\n🎬 WHAT TO FILM:")
     for f in idea["film"]:
         print("-", f)
+
+elif platform == "instagram":
+    post = random.choice(instagram_posts)
+
+    print("\n📸 INSTAGRAM POST:", post["title"])
+
+    print("\n🧩 SLIDES:")
+    for slide in post["slides"]:
+        print("-", slide)
+
+    print("\n📝 CAPTION:")
+    print(post["caption"])
