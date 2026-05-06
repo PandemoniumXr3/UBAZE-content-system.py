@@ -279,3 +279,32 @@ for s in idea["say"]:
 print("\n🎬 WHAT TO FILM:")
 for f in idea["film"]:
     print("-", f)
+
+# kies welk platform ik wil posten 
+    platform = input("TikTok or Instagram? ").lower()
+
+
+    if platform == "tiktok":
+    print("🔥 HOOK:", idea["tiktok"]["hook"])
+
+    print("\n🎬 SHOTS:")
+    for shot in idea["tiktok"]["shots"]:
+        print("-", shot)
+
+    print("\n🎤 WHAT TO SAY:")
+    for line in idea["tiktok"]["say"]:
+        print("-", line)
+
+elif platform == "instagram":
+    print("📸 POST TYPE:", idea["instagram"]["post_type"])
+    print("📝 CAPTION:", idea["instagram"]["caption"])
+
+    print("\n🧩 SLIDES:")
+    for slide in idea["instagram"]["slides"]:
+        print("-", slide)
+
+    print("\n📷 PHOTOS:")
+    for photo in idea["instagram"]["photos"]:
+        print("-", photo)
+    
+
